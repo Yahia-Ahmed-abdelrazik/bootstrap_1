@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {}
+
+body {}
+
+main {
+    height: 100vh;
+    background-image: url(../img/egyptian-pyramids-in-desert-free-photo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* start-navbar */
+.navbar {}
+
+.navbar .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    /* font-size: 20px; */
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: blue;
+}
+
+.navbar .navbar-toggler {
+    color: blue;
+    border-color: blue;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: red;
+}
+
+/* end-navbar */
+/* start-landing */
+.landing {
+    /* color: rgb(3, 3, 3); */
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+    min-height: calc(100vh - 96px);
+}
+
+.landing p {
+    font-size: 28px;
+    /* color: rgb(45, 39, 39); */
+    color: white;
+}
+
+.line {
+    width: 80px;
+    border: 2px solid rgb(151, 51, 51);
+    margin: auto;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.line:hover {
+    width: 200px;
+}
+
+/* end-landing */
+.bg-site {
+    background-image: url(../img/WhatsApp\ Image\ 2023-11-03\ at\ 10.27.25\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/*  start the ancint */
+.the-ancint {
+    font-size: 28px;
+}
+
+.the-ancint p {
+    font-size: 22px;
+}
+
+.the-ancint .info {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+}
+
+/*  end the ancint */
+
+/* st-you didn't know */
+
+.you-know {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+}
+
+.you-know img {
+    max-width: 348px;
+
+    max-height: 475px;
+}
+
+/* end-you didn't know */
+/* st-dstination */
+.accordion button {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* end-dstination */
+
+
+
+/* our-team */
+.our-team{
+    
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+    
+    margin: 100px 0;
+} 
+.our-team .cont{
+    transition: 1s;
+    margin-bottom: 50px !important;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+.our-team .cont:hover{
+    box-shadow: 2px 0px 26px 10px #ce8e20;
+    transform: scale(1.1);
+}
+.our-team .cont .text .head{
+    
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Playfair Display", serif;
+    position: relative;
+}
+.our-team .cont .text .head::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #ce8e20;
+    width: 20%;
+    height: 3px;
+    border-radius: 3px;
+    transition: 1s;
+}
+.our-team .cont:hover .text .head::after{
+    width: 30%;
+}
+
+.our-team .cont{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgba(170, 168, 168, 0.349);
+    overflow: hidden;
+    margin-top: 10px;
+}
+.our-team .cont .text{
+    padding: 10px;
+}
+.our-team .cont .text .body{
+    font-weight: normal;
+}
+.our-team .cont .text .foot ul{
+    list-style: none;
+}
+.our-team .cont .text .foot ul li{
+    margin: 0 10px;
+    padding: 3px;
+    background-color: rgb(255, 255, 255)fff;
+    color: black;
+    border-radius: 5px;
+    transition: .3s;
+}
+.our-team .cont .text .foot ul li:hover{
+    background-color: black;
+    color: white;
+}
+.our-team .cont .img{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.our-team .cont .img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+.our-team .cont:hover .img img{
+    transform: scale(1.2) ;  
+    top: 0;
+    left:0 ;
+    
+}
+
+
+.our-team .cont .sec{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.our-team .cont .sec img{
+    width:100% ;
+    height:100% ;
+    position: absolute;
+    top: 50%;
+    right: -50%; 
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+.our-team .cont:hover .sec img{
+    transform: scale(1.2) ;
+    top: 0;
+    right: 0 ;
+    
+    
+}
+
+
+/* end-our-team */
+
+/* st-footer */
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+
+/* end-footer */
+
+
+
+
+
+
+
+
+
+
+/* st-responsiv */
+@media (min-width: 1400px) {
+    iframe {
+        width: 1280px;
+        height: 720px;
+    }
+}
+
+@media (max-width: 1400px) {
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .the-ancint .info {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .the-ancint .info {
+        display: block !important;
+        font-size: 19px;
+    }
+
+    .the-ancint .info .s1 {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+
+
+@media (max-width:770px) {
+    .our-team .cont{
+        flex-direction: column !important;
+        height: auto;
+    }
+    .our-team .cont .img{
+        order: 1;
+        width: 100% !important;
+    }
+    .our-team .cont .img::after{
+        display: none;
+    }
+    .our-team .cont .img img{
+        width: 100% !important;
+    }
+    .our-team .cont .sec{
+        order: 1;
+        width: 100% !important;
+    }
+    .our-team .cont .sec::after{
+        display: none;
+    }
+    .our-team .cont .sec img{
+        width: 100% !important;
+    }
+.our-team .cont .text{
+        order: 2;
+        width: 100% !important;
+    }
+
+}
+/* end-responsiv */
